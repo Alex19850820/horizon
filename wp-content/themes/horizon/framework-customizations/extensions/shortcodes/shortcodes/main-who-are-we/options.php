@@ -8,11 +8,68 @@
 $options = [
 //    //ключ - slug опции, к которому будем обращаться во view
     //значение - массив конфигураций для опции
-	/*'title'     => [
+	'h2'     => [
 		'type'  => 'text',
-		'value' => 'наши результаты',
+		'value' => 'кто мы?',
 		'label' => __('Заголовок', '{domain}'),
 	],
+	'advantages' => [
+		'type' => 'addable-popup',
+		'label' => __('Добавить преимущества', '{domain}'),
+		'template' => '{{- h2 }}',
+		'size' => 'large', // small, medium, large
+		'limit' => 0, // limit the number of popup`s that can be added
+		'add-button-text' => __('добавить', '{domain}'),
+		'sortable' => true,
+		'popup-options' => [
+			'h2'     => [
+				'type'  => 'text',
+				'value' => '',
+				'label' => __('Добавить преимущества', '{domain}'),
+			],
+		],
+	],
+	'customers_count'     => [
+		'type'  => 'text',
+		'value' => '0',
+		'label' => __('Количество довольных клиентов', '{domain}'),
+	],
+	'customers'     => [
+		'type'  => 'text',
+		'value' => 'довольных клиентов',
+		'label' => __('Заголовок', '{domain}'),
+	],
+	'sites_count'     => [
+		'type'  => 'text',
+		'value' => '0',
+		'label' => __('Количество созданых сайтов', '{domain}'),
+	],
+	'sites'     => [
+		'type'  => 'text',
+		'value' => 'разработанных сайтов',
+		'label' => __('Заголовок', '{domain}'),
+	],
+	'years'     => [
+		'type'  => 'text',
+		'value' => '0',
+		'label' => __('Кол-во лет опыта', '{domain}'),
+	],
+	'years_text'     => [
+		'type'  => 'text',
+		'value' => 'лет опыта',
+		'label' => __('Заголовок', '{domain}'),
+	],
+	'people_count'     => [
+		'type'  => 'text',
+		'value' => '0',
+		'label' => __('Кол-во в штате', '{domain}'),
+	],
+	'people_text'     => [
+		'type'  => 'text',
+		'value' => 'сотрудников в штате',
+		'label' => __('Заголовок', '{domain}'),
+	],
+		/*
 	'img'     => [
 		'type'  => 'upload',
 		'value' => '',

@@ -19,39 +19,34 @@ $options = [
 				'label' => __( 'E-mail', '{domain}' ),
 				'value' => '',
 			],
-			'time' => [
-				'type'  => 'text',
-				'label' => __( 'Время работы', '{domain}' ),
-				'value' => '',
-			],
-			'address' => [
-				'type'  => 'text',
-				'label' => __( 'Адрес', '{domain}' ),
-				'value' => '',
-			],
-			'address_map' => [
+			'menu_main' => [
 				'type' => 'addable-popup',
-				'label' => __('Добавить адресс офиса', '{domain}'),
-				'template' => '{{- text }}',
+				'label' => __('Редактировать меню', '{domain}'),
+				'template' => '{{- m1 }}',
 				'size' => 'large', // small, medium, large
 				'limit' => 0, // limit the number of popup`s that can be added
 				'add-button-text' => __('добавить', '{domain}'),
 				'sortable' => true,
 				'popup-options' => [
-					'text' => [
+					'm1' => [
 						'type'  => 'text',
-						'label' => __( 'Название офиса', '{domain}' ),
-						'value' => '',
+						'label' => __( 'Главная страница', '{domain}' ),
+						'value' => 'Главная',
 					],
-					'city' => [
+					'm2' => [
 						'type'  => 'text',
-						'label' => __( 'Город для центрирования карты', '{domain}' ),
-						'value' => '',
+						'label' => __( 'О нас', '{domain}' ),
+						'value' => 'О нас',
 					],
-					'address' => [
+					'm3' => [
 						'type'  => 'text',
-						'label' => __( 'Адресс офиса', '{domain}' ),
-						'value' => '',
+						'label' => __( 'Наши проекты', '{domain}' ),
+						'value' => 'Наши проекты',
+					],
+					'm4' => [
+						'type'  => 'text',
+						'label' => __( 'Контакты', '{domain}' ),
+						'value' => 'Контакты',
 					],
 				],
 			],
@@ -68,26 +63,6 @@ $options = [
 			'telegram' => [
 			'type'  => 'text',
 				'label' => __( 'Telegram', '{domain}' ),
-				'value' => '',
-			],
-			'instagram' => [
-				'type'  => 'text',
-				'label' => __( 'Instagram', '{domain}' ),
-				'value' => '',
-			],
-			'google_plus' => [
-				'type'  => 'text',
-				'label' => __( 'Google +', '{domain}' ),
-				'value' => '',
-			],
-			'youtube' => [
-				'type'  => 'text',
-				'label' => __( 'Youtube', '{domain}' ),
-				'value' => '',
-			],
-			'twitter' => [
-				'type'  => 'text',
-				'label' => __( 'Twitter', '{domain}' ),
 				'value' => '',
 			],
 		],

@@ -331,10 +331,14 @@ $(function () {
   function whoNumber() {
     if (whoBlock.getBoundingClientRect().bottom - window.innerHeight <= 0) {
       window.removeEventListener('scroll', whoNumber, false);
-      animateNumber('.jsNum1', 0, 78, 20);
-      animateNumber('.jsNum2', 0, 112, 10);
-      animateNumber('.jsNum3', 0, 8, 50);
-      animateNumber('.jsNum4', 0, 7, 50);
+      var customers = parseInt($('.jsNum1').attr('data-num'));
+      var sites = parseInt($('.jsNum2').attr('data-num'));
+      var years = parseInt($('.jsNum3').attr('data-num'));
+      var people = parseInt($('.jsNum4').attr('data-num'));
+      animateNumber('.jsNum1', 0, customers, 20);
+      animateNumber('.jsNum2', 0, sites, 10);
+      animateNumber('.jsNum3', 0, years, 50);
+      animateNumber('.jsNum4', 0, people, 50);
     }
   }
 

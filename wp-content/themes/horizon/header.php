@@ -40,13 +40,13 @@ $contacts = fw_get_db_customizer_option();
 					</div>
 					<nav class="overlayMenu">
 						<ul class="menu">
-							<li><a class="scroll" href="#">Главная</a>
+							<li><a class="scroll" href="#"><?=$contacts['menu_main'][0]['m1']?></a>
 							</li>
-							<li><a class="scroll" href="#whoAreWe">О нас</a>
+							<li><a class="scroll" href="#whoAreWe"><?=$contacts['menu_main'][0]['m2']?></a>
 							</li>
-							<li><a class="scroll" href="#ourWork">Наши проекты</a>
+							<li><a class="scroll" href="#ourWork"><?=$contacts['menu_main'][0]['m3']?></a>
 							</li>
-							<li><a class="scroll" href="#jsForm">Контакты</a>
+							<li><a class="scroll" href="#jsForm"><?=$contacts['menu_main'][0]['m4']?></a>
 							</li>
 						</ul>
 					</nav>
